@@ -132,10 +132,10 @@ footer {
   background: white;
   width: 40px;
   height: 40px;
-  /* margin: 10px; */
   padding: 20px;
   cursor: pointer;
-  /* opacity: 0;   */
+  z-index: 999;
+  opacity: 0;  
 }
 
 #hamburgerButton:checked {
@@ -147,8 +147,8 @@ footer {
   height: max-content;
   width: 40px;
   height: 40px;
-
-  /* opacity: 0;   */
+  z-index: 999;
+  opacity: 0;  
 }
 
 .bar1, .bar2, .bar3 {
@@ -193,9 +193,9 @@ footer {
   position: relative;
  
 }
+
 #cssmenu {
   width: 210px;
-
   border-bottom: 4px solid #656659;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
