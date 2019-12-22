@@ -122,6 +122,7 @@ footer {
   display: inline-block;
   cursor: pointer;
   float: left;
+  position: relative;
 
 }
 
@@ -129,12 +130,12 @@ footer {
   position: absolute;
   display: block;
   width: inherit;
-  background: white;
+  background: bla;
   width: 40px;
   height: 40px;
   padding: 20px;
   cursor: pointer;
-  z-index: 999;
+  z-index: 99999;
   opacity: 0;  
 }
 
@@ -147,28 +148,36 @@ footer {
   height: max-content;
   width: 40px;
   height: 40px;
-  z-index: 999;
+  z-index: 99999;
   opacity: 0;  
 }
-
+#hamContainer {
+  background-color: white;
+  
+}
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #ffffff;
+  background-color: #111111;
   margin: 6px 0;
   transition: 0.4s;
+  z-index: 9999;
+
 }
 
-#hamburgerButton:checked ~ .bar1 {
+#hamburgerButton:checked ~ #hamContainer .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
+  z-index: 9999;
+
 }
 
-#hamburgerButton:checked ~ .bar2 {opacity: 0;}
+#hamburgerButton:checked ~ #hamContainer .bar2 {opacity: 0;}
 
-#hamburgerButton:checked ~ .bar3 {
+#hamburgerButton:checked ~ #hamContainer .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+  z-index: 9999;
 }
 
 
@@ -180,7 +189,7 @@ footer {
 #cssmenu a {
 
   position:fixed;
-  z-index: 9999;
+  z-index: 996;
   margin: 0;
   padding: 0;
   border: 0;
@@ -200,7 +209,14 @@ footer {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  display: none;
 }
+
+#hamburgerButton:checked ~ #cssmenu {
+  z-index: 600;
+  display: block;
+}
+
 #cssmenu a {
   line-height: 1.3;
 }

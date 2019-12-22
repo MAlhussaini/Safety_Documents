@@ -124,12 +124,6 @@
                                     <tr
                                         style="background-color: #FF0000; font-family: Arial, Helvetica, sans-serif; font-size: small; font-weight: bold; font-style: italic; color: #FFFFFF; ">
                                         <td colspan="3" align="right">
-                                            <span id="hamburger">
-                                                <input type="checkbox" name="hamburgerButton" id="hamburgerButton">
-                                                <div class="bar1"></div>
-                                                <div class="bar2"></div>
-                                                <div class="bar3"></div>
-                                            </span>
                                             Area ::&nbsp; <span id="lblArea">COA</span>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SubArea :&nbsp;: <span
                                                 id="lblSubArea">RIYADH</span>
@@ -152,89 +146,100 @@
                                 <tbody>
                                     <tr>
                                         <td style="vertical-align:top" class="auto-style1">
+                                            <!-- <span> -->
+                                            <span id="hamburger">
+                                                <input type="checkbox" name="hamburgerButton" id="hamburgerButton">
+                                                <div id="hamContainer">
+                                                    <div class="bar1"></div>
+                                                    <div class="bar2"></div>
+                                                    <div class="bar3"></div>
+                                                </div>
+                                                <!-- </span> -->
 
-                                            <div id="cssmenu">
-                                                <ul>
-                                                    <li class="active"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx"><span>Home</span></a>
-                                                    </li>
-                                                    <li class="has-sub"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSECEmployee.aspx"><span>SAFETY
-                                                                DOCUMENTS</span></a>
-                                                        <ul>
+                                                <div id="cssmenu">
+                                                    <ul>
+                                                        <li class="active"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx"><span>Home</span></a>
+                                                        </li>
+                                                        <li class="has-sub"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSECEmployee.aspx"><span>SAFETY
+                                                                    DOCUMENTS</span></a>
+                                                            <ul>
 
-                                                            <li><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/AddSafetyDocuments.aspx"><span>Add
-                                                                        Safety Document</span></a></li>
-                                                            <li><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx"><span>View
-                                                                        Safety Documents</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="has-sub"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span>AUTHORITY</span></a>
-                                                        <ul>
-                                                            <li><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/ViewAuthority.aspx"><span>View
-                                                                        Authorization </span></a></li>
-                                                            <li><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/DefineAuthority.aspx"><span>Add
-                                                                        Authorization</span></a></li>
-                                                            <li><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/AddAuthorizationClass.aspx"><span>Add
-                                                                        Authorization Class</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="last"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSECEmployee.aspx"><span>SEC
-                                                                EMPLOYEE</span></a></li>
-                                                    <li class="has-sub"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span>COMPANY</span></a>
-                                                        <ul>
-                                                            <li><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/AddContractor.aspx"><span>Add/View
-                                                                        Company</span></a></li>
-                                                            <li class="last"><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/AddContractEmployee.aspx"><span>Add/View
-                                                                        Company Employee</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="has-sub"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span>Master
-                                                                Data</span></a>
-                                                        <ul>
-                                                            <li><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/AddDepartment.aspx"><span>Add
-                                                                        Department</span></a></li>
-                                                            <li class="last"><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/AddStation.aspx"><span>Add
-                                                                        Station</span></a></li>
-                                                            <li class="last"><a
-                                                                    href="http://c-rhq-webapp3/safetydocumentcentral/AddEquipments.aspx"><span>Add
-                                                                        Equipment</span></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="last"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/EmployeeBlackList.aspx"><span>Black
-                                                                List</span></a></li>
-                                                    <li class="last"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/Help.aspx"><span>HELP</span></a>
-                                                    </li>
+                                                                <li><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/AddSafetyDocuments.aspx"><span>Add
+                                                                            Safety Document</span></a></li>
+                                                                <li><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx"><span>View
+                                                                            Safety Documents</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span>AUTHORITY</span></a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/ViewAuthority.aspx"><span>View
+                                                                            Authorization </span></a></li>
+                                                                <li><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/DefineAuthority.aspx"><span>Add
+                                                                            Authorization</span></a></li>
+                                                                <li><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/AddAuthorizationClass.aspx"><span>Add
+                                                                            Authorization Class</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="last"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSECEmployee.aspx"><span>SEC
+                                                                    EMPLOYEE</span></a></li>
+                                                        <li class="has-sub"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span>COMPANY</span></a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/AddContractor.aspx"><span>Add/View
+                                                                            Company</span></a></li>
+                                                                <li class="last"><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/AddContractEmployee.aspx"><span>Add/View
+                                                                            Company Employee</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span>Master
+                                                                    Data</span></a>
+                                                            <ul>
+                                                                <li><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/AddDepartment.aspx"><span>Add
+                                                                            Department</span></a></li>
+                                                                <li class="last"><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/AddStation.aspx"><span>Add
+                                                                            Station</span></a></li>
+                                                                <li class="last"><a
+                                                                        href="http://c-rhq-webapp3/safetydocumentcentral/AddEquipments.aspx"><span>Add
+                                                                            Equipment</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="last"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/EmployeeBlackList.aspx"><span>Black
+                                                                    List</span></a></li>
+                                                        <li class="last"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/Help.aspx"><span>HELP</span></a>
+                                                        </li>
 
-                                                    <li class="last"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
-                                                    </li>
-                                                    <li class="last"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
-                                                    </li>
-                                                    <li class="last"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
-                                                    </li>
-                                                    <li class="last"><a
-                                                            href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                                        <li class="last"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
+                                                        </li>
+                                                        <li class="last"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
+                                                        </li>
+                                                        <li class="last"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
+                                                        </li>
+                                                        <li class="last"><a
+                                                                href="http://c-rhq-webapp3/safetydocumentcentral/ViewSafetyDocuments.aspx#"><span></span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </span>
 
 
                                         </td>
